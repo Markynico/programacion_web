@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+  
+    <style>
+      .task-container{
+        border: 2px solid #000;
+        padding: 10px;
+        margin: 10px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 250px;
+      }
+      .task-container input{
+        margin-right: 10px;
+      }
+      .delete-btn{
+        background: none;
+        color: black;
+        border: none;
+        font-size: 20px;
+        margin-left: 100px;
+        cursor: pointer;
+      }
+      body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .input-container input {
+        padding: 5px;
+        font-size: 16px;
+      }
+      .input-container button {
+        margin-left: 10px;
+        padding: 6px 12px;
+        font-size: 16px;
+      }
+
+      header h1 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+    </style>
+  </head>
+
+
+
+
+  <body>
+    <div id="root"></div>
+    <header>
+      <h1>Lista de tareas de Marcos</h1>
+    </header>
+    <div class="input-container">
+      <input type="text">
+      <button>ADD</button>
+    </div>
+    <div>
+      <ul>
+        <li class="task-container">
+          <input type="checkbox">
+          tarea N1
+          <button class="delete-btn">
+            <i class="fa fa-trash-o"></i>
+          </button>
+        </li>
+        
+        <li class="task-container">
+          <input type="checkbox">
+          Tarea N2
+          <button class="delete-btn">
+            <i class="fa fa-trash-o"></i>
+          </button>
+        </li>
+        
+        <li class="task-container">
+          <input type="checkbox">
+          Tarea 3
+          <button class="delete-btn">
+            <i class="fa fa-trash-o"></i>
+          </button>
+        </li>
+  
+        <li class="task-container">
+          <input type="checkbox">
+          <s>Completada - tarea 4</s>
+          <button class="delete-btn">
+            <i class="fa fa-trash-o"></i>
+          </button>
+        </li>
+      </ul>
+    </div>
+     
+    
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
